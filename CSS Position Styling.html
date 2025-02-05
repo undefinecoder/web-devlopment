@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position Styling</title>
+    <style>
+        .relative {
+            position: relative;
+            top: 20px;
+            left: 20px;
+            background-color: lightblue;
+            padding: 10px;
+        }
+
+        .absolute {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            background-color: lightgreen;
+            padding: 10px;
+        }
+
+        .fixed {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            background-color: lightcoral;
+            padding: 10px;
+        }
+
+        .sticky {
+            position: -webkit-sticky; /* For Safari */
+            position: sticky;
+            top: 0;
+            background-color: lightgoldenrodyellow;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="relative">This is a relative positioned element.</div>
+    <div class="absolute">This is an absolute positioned element.</div>
+    <div class="fixed">This is a fixed positioned element.</div>
+    <div class="sticky">This is a sticky positioned element.</div>
+    <p>Scroll down to see the sticky element in action.</p>
+    <p style="height: 2000px;"></p>
+</body>
+</html>
